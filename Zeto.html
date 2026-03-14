@@ -1,0 +1,1595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zeto Picks – Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="Zeto.css">
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav id="navbar">
+        <div class="max-w-7xl mx-auto px-5 flex items-center justify-between h-16">
+
+            <!-- Logo -->
+            <a href="#hero" class="logo-text">
+                ZETO<span class="logo-accent">PICKS</span>
+            </a>
+
+            <!-- Desktop Links — pill container -->
+            <ul class="hidden md:flex nav-pill">
+                <li><a href="#story" class="nav-link">Who Is Zeto</a></li>
+                <li><a href="#results" class="nav-link">Results</a></li>
+                <li><a href="#community" class="nav-link">Community</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+            </ul>
+
+            <!-- Desktop CTA -->
+            <a href="#pricing" class="hidden md:block cta-btn">Join Now</a>
+
+            <!-- Hamburger (mobile) -->
+            <button id="hamburger-btn" class="hamburger md:hidden focus:outline-none" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu">
+            <a href="#story" class="mobile-link">Who Is Zeto</a>
+            <a href="#results" class="mobile-link">Results</a>
+            <a href="#community" class="mobile-link">Community</a>
+            <a href="#pricing" class="mobile-link">Pricing</a>
+            <a href="#pricing" class="cta-btn text-center mt-2">Join Now →</a>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <!-- ================================================
+     ZETO PICKS — HERO SECTION HTML
+     Requires: Tailwind CDN, Bebas Neue + Barlow fonts, hero.css
+     ================================================ -->
+
+    <section id="hero">
+
+        <!-- Background decorations -->
+        <div class="hero-blob hero-blob-1"></div>
+        <div class="hero-blob hero-blob-2"></div>
+
+        <div class="hero-inner">
+
+            <!-- ======= LEFT: COPY ======= -->
+            <div class="hero-left">
+
+                <!-- Badge -->
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    #1 Player Props Community in the World
+                </div>
+
+                <!-- Main Heading -->
+                <h1 class="hero-heading">
+                    <span class="outline">STOP</span><br />
+                    GUESSING.<br />
+                    <span class="accent">START</span><br />
+                    CASHING.
+                </h1>
+
+                <!-- Subheading -->
+                <p class="hero-sub">
+                    Zeto has dedicated his life to mastering player props —
+                    building a <strong>20,000+ member community</strong> that wins
+                    together every single day across NBA, NFL, MLB, NHL &amp; more.
+                </p>
+
+                <!-- Stats Row -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-num">81%</span>
+                        <span class="stat-lbl">Win Rate</span>
+                    </div>
+                    <div class="stat-div"></div>
+                    <div class="stat-item">
+                        <span class="stat-num">20K+</span>
+                        <span class="stat-lbl">Members</span>
+                    </div>
+                    <div class="stat-div"></div>
+                    <div class="stat-item">
+                        <span class="stat-num">15+</span>
+                        <span class="stat-lbl">Daily Picks</span>
+                    </div>
+                    <div class="stat-div"></div>
+                    <div class="stat-item">
+                        <span class="stat-num">4.6★</span>
+                        <span class="stat-lbl">On Whop</span>
+                    </div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="hero-cta-group">
+                    <a href="https://whop.com/1-month-4e/?productId=prod_BdecxIAOqkyO4&a=digitalartlab"
+                        class="btn-primary">
+                        Get Access Now <span>→</span>
+                    </a>
+                    <a href="#proof" class="btn-secondary">
+                        See Real Results <span>↓</span>
+                    </a>
+                </div>
+
+                <!-- Trust Strip -->
+                <div class="trust-strip">
+                    <div class="trust-stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <p class="trust-text">
+                        <strong>277+ five-star reviews</strong> · Trusted by 20,000 sharp bettors
+                    </p>
+                </div>
+
+            </div>
+            <!-- /LEFT -->
+
+            <!-- ======= RIGHT: KPI DASHBOARD ======= -->
+            <div class="hero-right">
+
+                <!-- Floating badges -->
+                <div class="float-badge float-badge-1">
+                    🏆 Member up <span style="color:var(--orange);margin:0 3px">$10K</span> this month
+                </div>
+                <div class="float-badge float-badge-2">
+                    🔥 <span style="color:var(--orange);margin:0 3px">81%</span> win rate · All-time
+                </div>
+
+                <!-- Main dashboard card -->
+                <div class="kpi-card">
+
+                    <!-- Card header -->
+                    <div class="kpi-card-header">
+                        <span class="kpi-card-title">ZETO <span>STATS</span></span>
+                        <span class="kpi-verified">✔ Verified</span>
+                    </div>
+
+                    <!-- Dark KPI grid (6 tiles, 3 cols × 2 rows) -->
+                    <div class="kpi-panel">
+
+                        <div class="kpi-tile">
+                            <div class="kpi-icon">🎯</div>
+                            <div class="kpi-value">81%</div>
+                            <div class="kpi-label">Win Rate</div>
+                        </div>
+
+                        <div class="kpi-tile">
+                            <div class="kpi-icon">👥</div>
+                            <div class="kpi-value">20K+</div>
+                            <div class="kpi-label">Members</div>
+                        </div>
+
+                        <div class="kpi-tile">
+                            <div class="kpi-icon">📅</div>
+                            <div class="kpi-value">15+</div>
+                            <div class="kpi-label">Daily Picks</div>
+                        </div>
+
+                        <div class="kpi-tile">
+                            <div class="kpi-icon">⭐</div>
+                            <div class="kpi-value">4.6</div>
+                            <div class="kpi-label">Whop Rating</div>
+                        </div>
+
+                        <div class="kpi-tile">
+                            <div class="kpi-icon">🏆</div>
+                            <div class="kpi-value">277+</div>
+                            <div class="kpi-label">5★ Reviews</div>
+                        </div>
+
+                        <div class="kpi-tile">
+                            <div class="kpi-icon">🏅</div>
+                            <div class="kpi-value">4 YRS</div>
+                            <div class="kpi-label">Experience</div>
+                        </div>
+
+                    </div>
+                    <!-- /kpi-panel -->
+
+                    <!-- Bottom verified strip -->
+                    <div class="kpi-bottom-strip">
+                        <div class="strip-icon">✔</div>
+                        <div>
+                            <div class="strip-text-title">Verified Results</div>
+                            <div class="strip-text-sub">All picks tracked & published publicly · No cherry-picking</div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /kpi-card -->
+
+            </div>
+            <!-- /RIGHT -->
+
+        </div>
+        <!-- /hero-inner -->
+
+    </section>
+
+    <!-- ================================================
+     ZETO PICKS — WHO IS ZETO SECTION HTML
+     Instagram-style profile card left + timeline right
+     Requires: story.css, Bebas Neue + Barlow, Tailwind CDN
+     ================================================ -->
+
+    <section id="story">
+        <div class="story-wrap">
+
+            <!-- Label row -->
+            <div class="story-label-row">
+                <span class="story-label">Who Is Zeto</span>
+                <div class="story-label-line"></div>
+                <span class="story-label-num">01 / 06</span>
+            </div>
+
+            <div class="story-grid">
+
+                <!-- ======= LEFT: INSTAGRAM PROFILE CARD ======= -->
+                <div class="ig-card-wrap">
+
+                    <div class="ig-card">
+
+                        <!-- Top bar -->
+                        <div class="ig-topbar">
+                            <span class="ig-logo">Instagram</span>
+                            <div class="ig-topbar-icons">
+                                <span>♡</span>
+                                <span>✈</span>
+                            </div>
+                        </div>
+
+                        <!-- Profile top: avatar + stats -->
+                        <div class="ig-profile-top">
+
+                            <!-- Avatar with story ring -->
+                            <div class="ig-avatar-wrap">
+                                <div class="ig-avatar-ring">
+                                    <div class="ig-avatar-inner">ZP</div>
+                                </div>
+                                <div class="ig-verified-badge">✓</div>
+                            </div>
+
+                            <!-- Stats -->
+                            <div class="ig-stats-row">
+                                <div class="ig-stat">
+                                    <span class="ig-stat-num">142</span>
+                                    <span class="ig-stat-lbl">posts</span>
+                                </div>
+                                <div class="ig-stat">
+                                    <span class="ig-stat-num">29K</span>
+                                    <span class="ig-stat-lbl">followers</span>
+                                </div>
+                                <div class="ig-stat">
+                                    <span class="ig-stat-num">1,088</span>
+                                    <span class="ig-stat-lbl">following</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Bio -->
+                        <div class="ig-bio">
+                            <div class="ig-name">Zeto Picks</div>
+                            <div class="ig-category">Sports betting · Player Props</div>
+                            <div class="ig-bio-text">
+                                💲 #1 Player Prop Consultant<br />
+                                💸 $1M+ in Member Winnings<br />
+                                📊 25K+ Paid Clients<br />
+                                <span class="ig-highlight" style="color:var(--orange);">🔗 joinzetopicks.com</span>
+                            </div>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="ig-btn-row">
+                            <a href="https://www.instagram.com/zetopicks/" target="_blank"
+                                class="ig-follow-btn">Follow</a>
+                            <div class="ig-msg-btn">Message</div>
+                        </div>
+
+                        <!-- Story Highlights -->
+                        <div class="ig-highlights">
+
+                            <div class="ig-highlight-item">
+                                <div class="ig-highlight-ring">
+                                    <div class="ig-highlight-circle"
+                                        style="background:linear-gradient(135deg,#1a1a2e,#e94560);">🏆</div>
+                                </div>
+                                <span class="ig-highlight-name">Wins</span>
+                            </div>
+
+                            <div class="ig-highlight-item">
+                                <div class="ig-highlight-ring">
+                                    <div class="ig-highlight-circle"
+                                        style="background:linear-gradient(135deg,#0f3460,#533483);">📊</div>
+                                </div>
+                                <span class="ig-highlight-name">Results</span>
+                            </div>
+
+                            <div class="ig-highlight-item">
+                                <div class="ig-highlight-ring">
+                                    <div class="ig-highlight-circle"
+                                        style="background:linear-gradient(135deg,#2d6a4f,#1b4332);">💰</div>
+                                </div>
+                                <span class="ig-highlight-name">Payouts</span>
+                            </div>
+
+                            <div class="ig-highlight-item">
+                                <div class="ig-highlight-ring">
+                                    <div class="ig-highlight-circle"
+                                        style="background:linear-gradient(135deg,#d62828,#f77f00);">🔥</div>
+                                </div>
+                                <span class="ig-highlight-name">NBA</span>
+                            </div>
+
+                            <div class="ig-highlight-item">
+                                <div class="ig-highlight-ring">
+                                    <div class="ig-highlight-circle"
+                                        style="background:linear-gradient(135deg,#3a0ca3,#7209b7);">🏈</div>
+                                </div>
+                                <span class="ig-highlight-name">NFL</span>
+                            </div>
+
+                        </div>
+
+                        <!-- Posts tab -->
+                        <div class="ig-posts-header">
+                            <div class="ig-posts-tab">⊞ Posts</div>
+                        </div>
+
+                        <!-- Posts grid (6 simulated posts) -->
+                        <div class="ig-grid">
+
+                            <div class="ig-post">
+                                <div class="ig-post-inner">
+                                    <div class="ig-post-emoji">🏀</div>
+                                    <div class="ig-post-text">NBA<br />Props<br />WIN ✓</div>
+                                </div>
+                                <div class="ig-post-overlay">
+                                    <span class="ig-overlay-stat">♡ 2.4K</span>
+                                    <span class="ig-overlay-stat">💬 89</span>
+                                </div>
+                            </div>
+
+                            <div class="ig-post">
+                                <div class="ig-post-inner">
+                                    <div class="ig-post-emoji">💰</div>
+                                    <div class="ig-post-text">$10K<br />Member<br />Win</div>
+                                </div>
+                                <div class="ig-post-overlay">
+                                    <span class="ig-overlay-stat">♡ 5.1K</span>
+                                    <span class="ig-overlay-stat">💬 203</span>
+                                </div>
+                            </div>
+
+                            <div class="ig-post">
+                                <div class="ig-post-inner">
+                                    <div class="ig-post-emoji">🎯</div>
+                                    <div class="ig-post-text">81%<br />Win<br />Rate</div>
+                                </div>
+                                <div class="ig-post-overlay">
+                                    <span class="ig-overlay-stat">♡ 3.8K</span>
+                                    <span class="ig-overlay-stat">💬 142</span>
+                                </div>
+                            </div>
+
+                            <div class="ig-post">
+                                <div class="ig-post-inner">
+                                    <div class="ig-post-emoji">🏈</div>
+                                    <div class="ig-post-text">NFL<br />5-Leg<br />Hit ✓</div>
+                                </div>
+                                <div class="ig-post-overlay">
+                                    <span class="ig-overlay-stat">♡ 4.2K</span>
+                                    <span class="ig-overlay-stat">💬 176</span>
+                                </div>
+                            </div>
+
+                            <div class="ig-post">
+                                <div class="ig-post-inner">
+                                    <div class="ig-post-emoji">📈</div>
+                                    <div class="ig-post-text">25K+<br />Paid<br />Clients</div>
+                                </div>
+                                <div class="ig-post-overlay">
+                                    <span class="ig-overlay-stat">♡ 6.7K</span>
+                                    <span class="ig-overlay-stat">💬 318</span>
+                                </div>
+                            </div>
+
+                            <div class="ig-post">
+                                <div class="ig-post-inner">
+                                    <div class="ig-post-emoji">⚾</div>
+                                    <div class="ig-post-text">MLB<br />Props<br />WIN ✓</div>
+                                </div>
+                                <div class="ig-post-overlay">
+                                    <span class="ig-overlay-stat">♡ 1.9K</span>
+                                    <span class="ig-overlay-stat">💬 67</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- /ig-grid -->
+
+                    </div>
+                    <!-- /ig-card -->
+
+                    <!-- Floating badge -->
+                    <div class="ig-float-badge ig-float-badge-1">
+                        🔥 <span style="color:var(--orange);">29K</span> followers · Growing daily
+                    </div>
+
+                </div>
+                <!-- /ig-card-wrap -->
+
+
+                <!-- ======= RIGHT: STORY + TIMELINE ======= -->
+                <div class="story-right">
+
+                    <h2 class="story-right-heading">
+                        THE MAN BEHIND<br />
+                        THE <span>81% WIN RATE</span>
+                    </h2>
+
+                    <p class="story-right-sub">
+                        Zeto isn't just another capper posting picks. He's a
+                        <strong>dedicated player prop specialist</strong> who turned
+                        a personal obsession into a community of 25,000+ paying
+                        members — with $1M+ in documented member winnings.
+                    </p>
+
+                    <!-- Pull quote -->
+                    <div class="story-pullquote">
+                        <p class="story-pullquote-text">
+                            "I've dedicated my life to mastering player props — building
+                            a community where <strong>winning isn't the exception,
+                                it's the standard.</strong>"
+                        </p>
+                        <p class="story-pullquote-author">— Zeto, Founder · Zeto Picks</p>
+                    </div>
+
+                    <!-- Timeline -->
+                    <div class="story-timeline">
+
+                        <div class="tl-item active" style="animation-delay:0.10s">
+                            <div class="tl-dot"></div>
+                            <span class="tl-icon">🔍</span>
+                            <h3 class="tl-title">THE <span>OBSESSION</span> BEGINS</h3>
+                            <p class="tl-body">
+                                While others placed casual bets, Zeto was deep in the data —
+                                back-testing player prop lines, hunting edges that sportsbooks
+                                consistently mispriced. <strong>Not guessing. Studying.</strong>
+                            </p>
+                            <div class="tl-tags">
+                                <span class="tl-tag">PrizePicks</span>
+                                <span class="tl-tag">Underdog</span>
+                                <span class="tl-tag">Sleeper</span>
+                            </div>
+                        </div>
+
+                        <div class="tl-item" style="animation-delay:0.17s">
+                            <div class="tl-dot"></div>
+                            <span class="tl-icon">📈</span>
+                            <h3 class="tl-title">A <span>SYSTEM</span> IS BUILT</h3>
+                            <p class="tl-body">
+                                Years of refinement produced a <strong>data-driven system
+                                    with an 81% all-time win rate</strong> across NBA, NFL, MLB,
+                                NHL, College and eSports. Not luck — a proven, repeatable process.
+                            </p>
+                            <div class="tl-tags">
+                                <span class="tl-tag">NBA</span>
+                                <span class="tl-tag">NFL</span>
+                                <span class="tl-tag">MLB</span>
+                                <span class="tl-tag">NHL</span>
+                                <span class="tl-tag">eSports</span>
+                            </div>
+                        </div>
+
+                        <div class="tl-item" style="animation-delay:0.24s">
+                            <div class="tl-dot"></div>
+                            <span class="tl-icon">👥</span>
+                            <h3 class="tl-title">A <span>COMMUNITY</span> IS BORN</h3>
+                            <p class="tl-body">
+                                Launched on Whop in June 2023, word spread fast.
+                                Members started winning. Reviews flooded in.
+                                Today <strong>25,000+ paying members</strong> trust Zeto's
+                                picks daily and $1M+ has been documented in member winnings.
+                            </p>
+                            <div class="tl-tags">
+                                <span class="tl-tag">Jun 2023</span>
+                                <span class="tl-tag">25K+ Members</span>
+                                <span class="tl-tag">$1M+ Won</span>
+                            </div>
+                        </div>
+
+                        <div class="tl-item" style="animation-delay:0.31s">
+                            <div class="tl-dot"></div>
+                            <span class="tl-icon">🏆</span>
+                            <h3 class="tl-title">THE <span>TEAM</span> EXPANDS</h3>
+                            <p class="tl-body">
+                                Zeto hand-picked a team of <strong>specialist analysts</strong> —
+                                each a proven expert in their sport — delivering 15+ verified
+                                picks every single day. No filler. No padding. Just edge.
+                            </p>
+                            <div class="tl-tags">
+                                <span class="tl-tag">15+ Daily Picks</span>
+                                <span class="tl-tag">Elite Analysts</span>
+                                <span class="tl-tag">24/7 Support</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /timeline -->
+
+                    <!-- Rating strip -->
+                    <div class="story-rating-strip">
+                        <span class="rating-big">4.6</span>
+                        <div class="rating-right">
+                            <div class="rating-stars">
+                                <span class="rating-star">★</span>
+                                <span class="rating-star">★</span>
+                                <span class="rating-star">★</span>
+                                <span class="rating-star">★</span>
+                                <span class="rating-star">★</span>
+                            </div>
+                            <span class="rating-sub">588 Verified Reviews on Whop</span>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /RIGHT -->
+
+            </div>
+            <!-- /story-grid -->
+
+            <!-- Bottom CTA strip -->
+            <div class="story-cta-strip">
+                <div class="story-cta-left">
+                    READY TO WIN WITH <span>ZETO?</span>
+                </div>
+                <a href="https://whop.com/1-month-4e/?productId=prod_BdecxIAOqkyO4&a=digitalartlab"
+                    class="story-cta-btn">
+                    Join The Community →
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TikTok embed script (required for TikTok embeds to work) -->
+    <script async src="https://www.tiktok.com/embed.js"></script>
+
+    <section id="results">
+
+        <div class="sec-label-row">
+            <span class="sec-label">Member Proof</span>
+            <div class="sec-label-line"></div>
+            <span class="sec-label-num">02 / 06</span>
+        </div>
+
+        <h2 class="sec-heading">WHAT MEMBERS <span>ARE SAYING</span></h2>
+        <p class="sec-sub">Real members. Real wins. 588 verified reviews and counting.</p>
+
+        <!-- Marquee Row 1 -->
+        <div class="marquee-section">
+            <div class="marquee-track">
+
+                <!-- Duplicate cards for seamless loop (first set) -->
+                <div class="testi-card">
+                    <div class="testi-stars">★★★★★</div>
+                    <div class="testi-win-badge">💰 Won $2,400 this week</div>
+                    <p class="testi-quote">"Zeto's NBA picks have been <strong>insane this season</strong>. Hit 4 out of
+                        5 power plays last week alone. This community pays for itself every single month."</p>
+                    <div class="testi-author-row">
+                        <div class="testi-avatar" style="background:linear-gradient(135deg,#f09433,#dc2743);">MR</div>
+                        <div>
+                            <div class="testi-name">Marcus R.</div>
+                            <div class="testi-meta">Member since Jan 2024</div>
+                        </div>
+                        <span class="testi-platform">PrizePicks</span>
+                    </div>
+                </div>
+
+                <div class="testi-card">
+                    <div class="testi-stars">★★★★★</div>
+                    <div class="testi-win-badge">💰 Up $8,700 this month</div>
+                    <p class="testi-quote">"I've tried 6 different pick services. <strong>None of them come close to
+                            Zeto.</strong> The breakdown he gives with each pick actually teaches you to think smarter."
+                    </p>
+                    <div class="testi-author-row">
+                        <div class="testi-avatar" style="background:linear-gradient(135deg,#0f3460,#533483);">JT</div>
+                        <div>
+                            <div class="testi-name">Jordan T.</div>
+                            <div class="testi-meta">Member since Aug 2023</div>
+                        </div>
+                        <span class="testi-platform">Underdog</span>
+                    </div>
+                </div>
+
+                <div class="testi-card">
+                    <div class="testi-stars">★★★★★</div>
+                    <div class="testi-win-badge">💰 $500 to $4,200 in 3 weeks</div>
+                    <p class="testi-quote">"Started with $500. Now sitting at $4,200 after just 3 weeks following Zeto's
+                        picks. <strong>This is not luck</strong>, his system just works."</p>
+                    <div class="testi-author-row">
+                        <div class="testi-avatar" style="background:linear-gradient(135deg,#2d6a4f,#1b4332);">AK</div>
+                        <div>
+                            <div class="testi-name">Alex K.</div>
+                            <div class="testi-meta">Member since Mar 2024</div>
+                        </div>
+                        <span class="testi-platform">Sleeper</span>
+                    </div>
+                </div>
+
+                <div class="testi-card">
+                    <div class="testi-stars">★★★★★</div>
+                    <div class="testi-win-badge">💰 Won $1,100 last night</div>
+                    <p class="testi-quote">"Hit a 6-leg parlay last night following Zeto's NFL picks. <strong>$1,100
+                            profit</strong> in one night. The community chat is amazing too, super supportive."</p>
+                    <div class="testi-author-row">
+                        <div class="testi-avatar" style="background:linear-gradient(135deg,#d62828,#f77f00);">DW</div>
+                        <div>
+                            <div class="testi-name">Derek W.</div>
+                            <div class="testi-meta">Member since Oct 2023</div>
+                        </div>
+                        <span class="testi-platform">PrizePicks</span>
+                    </div>
+                </div>
+
+                <div class="testi-card">
+                    <div class="testi-stars">★★★★★</div>
+                    <div class="testi-win-badge">💰 Paid off my rent this month</div>
+                    <p class="testi-quote">"I was skeptical at first but the <strong>transparency blew me away</strong>.
+                        Zeto posts every result — wins AND losses. That kind of honesty is rare in this space."</p>
+                    <div class="testi-author-row">
+                        <div class="testi-avatar" style="background:linear-gradient(135deg,#3a0ca3,#7209b7);">SL</div>
+                        <div>
+                            <div class="testi-name">Sam L.</div>
+                            <div class="testi-meta">Member since Jun 2023</div>
+                        </div>
+                        <span class="testi-platform">Underdog</span>
+                    </div>
+                </div>
+
+                <!-- Duplicate set for seamless loop -->
+                <div class="testi-card">
+                    <div class="testi-stars">★★★★★</div>
+                    <div class="testi-win-badge">💰 Won $2,400 this week</div>
+                    <p class="testi-quote">"Zeto's NBA picks have been <strong>insane this season</strong>. Hit 4 out of
+                        5 power plays last week alone. This community pays for itself every single month."</p>
+                    <div class="testi-author-row">
+                        <div class="testi-avatar" style="background:linear-gradient(135deg,#f09433,#dc2743);">MR</div>
+                        <div>
+                            <div class="testi-name">Marcus R.</div>
+                            <div class="testi-meta">Member since Jan 2024</div>
+                        </div>
+                        <span class="testi-platform">PrizePicks</span>
+                    </div>
+                </div>
+                <div class="testi-card">
+                    <div class="testi-stars">★★★★★</div>
+                    <div class="testi-win-badge">💰 Up $8,700 this month</div>
+                    <p class="testi-quote">"I've tried 6 different pick services. <strong>None of them come close to
+                            Zeto.</strong> The breakdown he gives with each pick actually teaches you to think smarter."
+                    </p>
+                    <div class="testi-author-row">
+                        <div class="testi-avatar" style="background:linear-gradient(135deg,#0f3460,#533483);">JT</div>
+                        <div>
+                            <div class="testi-name">Jordan T.</div>
+                            <div class="testi-meta">Member since Aug 2023</div>
+                        </div>
+                        <span class="testi-platform">Underdog</span>
+                    </div>
+                </div>
+                <div class="testi-card">
+                    <div class="testi-stars">★★★★★</div>
+                    <div class="testi-win-badge">💰 $500 to $4,200 in 3 weeks</div>
+                    <p class="testi-quote">"Started with $500. Now sitting at $4,200 after just 3 weeks following Zeto's
+                        picks. <strong>This is not luck</strong>, his system just works."</p>
+                    <div class="testi-author-row">
+                        <div class="testi-avatar" style="background:linear-gradient(135deg,#2d6a4f,#1b4332);">AK</div>
+                        <div>
+                            <div class="testi-name">Alex K.</div>
+                            <div class="testi-meta">Member since Mar 2024</div>
+                        </div>
+                        <span class="testi-platform">Sleeper</span>
+                    </div>
+                </div>
+                <div class="testi-card">
+                    <div class="testi-stars">★★★★★</div>
+                    <div class="testi-win-badge">💰 Won $1,100 last night</div>
+                    <p class="testi-quote">"Hit a 6-leg parlay last night following Zeto's NFL picks. <strong>$1,100
+                            profit</strong> in one night. The community chat is amazing too, super supportive."</p>
+                    <div class="testi-author-row">
+                        <div class="testi-avatar" style="background:linear-gradient(135deg,#d62828,#f77f00);">DW</div>
+                        <div>
+                            <div class="testi-name">Derek W.</div>
+                            <div class="testi-meta">Member since Oct 2023</div>
+                        </div>
+                        <span class="testi-platform">PrizePicks</span>
+                    </div>
+                </div>
+                <div class="testi-card">
+                    <div class="testi-stars">★★★★★</div>
+                    <div class="testi-win-badge">💰 Paid off my rent this month</div>
+                    <p class="testi-quote">"I was skeptical at first but the <strong>transparency blew me away</strong>.
+                        Zeto posts every result — wins AND losses. That kind of honesty is rare in this space."</p>
+                    <div class="testi-author-row">
+                        <div class="testi-avatar" style="background:linear-gradient(135deg,#3a0ca3,#7209b7);">SL</div>
+                        <div>
+                            <div class="testi-name">Sam L.</div>
+                            <div class="testi-meta">Member since Jun 2023</div>
+                        </div>
+                        <span class="testi-platform">Underdog</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Marquee Row 2 (reverse) -->
+        <div class="marquee-section">
+            <div class="marquee-track reverse">
+
+                <div class="testi-card">
+                    <div class="testi-stars">★★★★★</div>
+                    <div class="testi-win-badge">💰 $3,800 profit in 2 weeks</div>
+                    <p class="testi-quote">"The eSports picks alone are worth the subscription. <strong>Nobody else
+                            covers CoD props like Zeto.</strong> Hit 7 straight last month."</p>
+                    <div class="testi-author-row">
+                        <div class="testi-avatar" style="background:linear-gradient(135deg,#f09433,#e6683c);">RT</div>
+                        <div>
+                            <div class="testi-name">Ryan T.</div>
+                            <div class="testi-meta">Member since Feb 2024</div>
+                        </div>
+                        <span class="testi-platform">PrizePicks</span>
+                    </div>
+                </div>
+
+                <div class="testi-card">
+                    <div class="testi-stars">★★★★★</div>
+                    <div class="testi-win-badge">💰 Turned $200 into $1,900</div>
+                    <p class="testi-quote">"Turned $200 into $1,900 following Zeto's MLB picks during the playoffs. The
+                        <strong>research and breakdowns are next level.</strong> Never going back."
+                    </p>
+                    <div class="testi-author-row">
+                        <div class="testi-avatar" style="background:linear-gradient(135deg,#0f3460,#16213e);">NP</div>
+                        <div>
+                            <div class="testi-name">Nate P.</div>
+                            <div class="testi-meta">Member since Sep 2023</div>
+                        </div>
+                        <span class="testi-platform">Sleeper</span>
+                    </div>
+                </div>
+
+                <div class="testi-card">
+                    <div class="testi-stars">★★★★★</div>
+                    <div class="testi-win-badge">💰 Won $5,200 last month</div>
+                    <p class="testi-quote">"Best investment I've ever made. <strong>$70/month for $5,200 in profit last
+                            month?</strong> Zeto's picks are just different. The 81% win rate is real."</p>
+                    <div class="testi-author-row">
+                        <div class="testi-avatar" style="background:linear-gradient(135deg,#d62828,#f77f00);">CM</div>
+                        <div>
+                            <div class="testi-name">Chris M.</div>
+                            <div class="testi-meta">Member since Jul 2023</div>
+                        </div>
+                        <span class="testi-platform">Underdog</span>
+                    </div>
+                </div>
+
+                <div class="testi-card">
+                    <div class="testi-stars">★★★★★</div>
+                    <div class="testi-win-badge">💰 Consistent $800+/week</div>
+                    <p class="testi-quote">"I make a consistent <strong>$800+ per week</strong> just following Zeto's
+                        daily picks. I've recommended this to 4 of my friends and they all thank me for it."</p>
+                    <div class="testi-author-row">
+                        <div class="testi-avatar" style="background:linear-gradient(135deg,#2d6a4f,#40916c);">BH</div>
+                        <div>
+                            <div class="testi-name">Brandon H.</div>
+                            <div class="testi-meta">Member since Nov 2023</div>
+                        </div>
+                        <span class="testi-platform">PrizePicks</span>
+                    </div>
+                </div>
+
+                <div class="testi-card">
+                    <div class="testi-stars">★★★★★</div>
+                    <div class="testi-win-badge">💰 Hit 9-leg parlay</div>
+                    <p class="testi-quote">"Zeto called a 9-leg parlay last Tuesday. <strong>All 9 hit.</strong> I've
+                        never seen anything like it. The community went absolutely crazy in the chat."</p>
+                    <div class="testi-author-row">
+                        <div class="testi-avatar" style="background:linear-gradient(135deg,#3a0ca3,#480ca8);">KJ</div>
+                        <div>
+                            <div class="testi-name">Kevin J.</div>
+                            <div class="testi-meta">Member since Apr 2024</div>
+                        </div>
+                        <span class="testi-platform">PrizePicks</span>
+                    </div>
+                </div>
+
+                <!-- Duplicate for seamless loop -->
+                <div class="testi-card">
+                    <div class="testi-stars">★★★★★</div>
+                    <div class="testi-win-badge">💰 $3,800 profit in 2 weeks</div>
+                    <p class="testi-quote">"The eSports picks alone are worth the subscription. <strong>Nobody else
+                            covers CoD props like Zeto.</strong> Hit 7 straight last month."</p>
+                    <div class="testi-author-row">
+                        <div class="testi-avatar" style="background:linear-gradient(135deg,#f09433,#e6683c);">RT</div>
+                        <div>
+                            <div class="testi-name">Ryan T.</div>
+                            <div class="testi-meta">Member since Feb 2024</div>
+                        </div>
+                        <span class="testi-platform">PrizePicks</span>
+                    </div>
+                </div>
+                <div class="testi-card">
+                    <div class="testi-stars">★★★★★</div>
+                    <div class="testi-win-badge">💰 Turned $200 into $1,900</div>
+                    <p class="testi-quote">"Turned $200 into $1,900 following Zeto's MLB picks. The <strong>research and
+                            breakdowns are next level.</strong> Never going back."</p>
+                    <div class="testi-author-row">
+                        <div class="testi-avatar" style="background:linear-gradient(135deg,#0f3460,#16213e);">NP</div>
+                        <div>
+                            <div class="testi-name">Nate P.</div>
+                            <div class="testi-meta">Member since Sep 2023</div>
+                        </div>
+                        <span class="testi-platform">Sleeper</span>
+                    </div>
+                </div>
+                <div class="testi-card">
+                    <div class="testi-stars">★★★★★</div>
+                    <div class="testi-win-badge">💰 Won $5,200 last month</div>
+                    <p class="testi-quote">"Best investment I've ever made. <strong>$70/month for $5,200 in
+                            profit?</strong> Zeto's picks are just different."</p>
+                    <div class="testi-author-row">
+                        <div class="testi-avatar" style="background:linear-gradient(135deg,#d62828,#f77f00);">CM</div>
+                        <div>
+                            <div class="testi-name">Chris M.</div>
+                            <div class="testi-meta">Member since Jul 2023</div>
+                        </div>
+                        <span class="testi-platform">Underdog</span>
+                    </div>
+                </div>
+                <div class="testi-card">
+                    <div class="testi-stars">★★★★★</div>
+                    <div class="testi-win-badge">💰 Consistent $800+/week</div>
+                    <p class="testi-quote">"I make a consistent <strong>$800+ per week</strong> just following Zeto's
+                        daily picks."</p>
+                    <div class="testi-author-row">
+                        <div class="testi-avatar" style="background:linear-gradient(135deg,#2d6a4f,#40916c);">BH</div>
+                        <div>
+                            <div class="testi-name">Brandon H.</div>
+                            <div class="testi-meta">Member since Nov 2023</div>
+                        </div>
+                        <span class="testi-platform">PrizePicks</span>
+                    </div>
+                </div>
+                <div class="testi-card">
+                    <div class="testi-stars">★★★★★</div>
+                    <div class="testi-win-badge">💰 Hit 9-leg parlay</div>
+                    <p class="testi-quote">"Zeto called a 9-leg parlay last Tuesday. <strong>All 9 hit.</strong> The
+                        community went absolutely crazy."</p>
+                    <div class="testi-author-row">
+                        <div class="testi-avatar" style="background:linear-gradient(135deg,#3a0ca3,#480ca8);">KJ</div>
+                        <div>
+                            <div class="testi-name">Kevin J.</div>
+                            <div class="testi-meta">Member since Apr 2024</div>
+                        </div>
+                        <span class="testi-platform">PrizePicks</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Whop reviews heading -->
+        <div class="whop-reviews-heading">VERIFIED WHOP <span>REVIEWS</span></div>
+
+        <!-- Whop reviews grid -->
+        <div class="whop-grid">
+            <div class="whop-card">
+                <div class="whop-card-top">
+                    <div class="whop-rating">★★★★★</div>
+                    <span class="whop-date">Mar 2025</span>
+                </div>
+                <p class="whop-text">"Best sports picks community on Whop hands down. <strong>Zeto is the real
+                        deal.</strong> His win rate speaks for itself."</p>
+                <div class="whop-author">— Michael B. · Verified Purchase</div>
+            </div>
+            <div class="whop-card">
+                <div class="whop-card-top">
+                    <div class="whop-rating">★★★★★</div>
+                    <span class="whop-date">Feb 2025</span>
+                </div>
+                <p class="whop-text">"I was losing money before I joined. Now I'm <strong>consistently
+                        profitable</strong>. The education alone is worth the price."</p>
+                <div class="whop-author">— Tyler S. · Verified Purchase</div>
+            </div>
+            <div class="whop-card">
+                <div class="whop-card-top">
+                    <div class="whop-rating">★★★★★</div>
+                    <span class="whop-date">Feb 2025</span>
+                </div>
+                <p class="whop-text">"24/7 support is no joke. Zeto and his team are <strong>always available</strong>.
+                    Never seen service like this before."</p>
+                <div class="whop-author">— Jamie R. · Verified Purchase</div>
+            </div>
+        </div>
+
+        <!-- Bottom CTA -->
+        <div class="results-bottom">
+            <div class="results-bottom-stat">
+                <span class="results-bottom-num">4.6★</span>
+                <span class="results-bottom-lbl">Whop Rating</span>
+            </div>
+            <div class="results-divider-v"></div>
+            <div class="results-bottom-stat">
+                <span class="results-bottom-num">588</span>
+                <span class="results-bottom-lbl">Reviews</span>
+            </div>
+            <div class="results-divider-v"></div>
+            <div class="results-bottom-stat">
+                <span class="results-bottom-num">25K+</span>
+                <span class="results-bottom-lbl">Paid Members</span>
+            </div>
+            <div class="results-divider-v"></div>
+            <div class="results-bottom-stat">
+                <span class="results-bottom-num">$1M+</span>
+                <span class="results-bottom-lbl">Won by Members</span>
+            </div>
+            <a href="https://whop.com/1-month-4e/?productId=prod_BdecxIAOqkyO4&a=digitalartlab" class="results-cta-btn">
+                Join Now →
+            </a>
+        </div>
+
+    </section>
+
+    <!-- Community Center -->
+
+    <section id="community">
+        <div class="community-wrap">
+
+            <!-- ---- Label row ---- -->
+            <div class="sec-label-row">
+                <span class="sec-label">Inside The Community</span>
+                <div class="sec-label-line"></div>
+                <span class="sec-label-num">04 / 06</span>
+            </div>
+
+            <!-- ---- Heading ---- -->
+            <div class="community-header">
+                <h2 class="community-heading">
+                    JOIN THE <span>#1</span><br />
+                    PROP COMMUNITY
+                </h2>
+                <p class="community-sub">
+                    20,000+ members winning together every day.
+                    Real picks. Real community. Real results.
+                </p>
+            </div>
+
+            <!-- ====================================================
+         MAIN GRID: LEFT videos | RIGHT stats + discord feed
+         ==================================================== -->
+            <div class="community-grid">
+
+                <!-- ======= LEFT: VIDEO WALL ======= -->
+                <div class="video-wall">
+
+                    <!-- Top label -->
+                    <div class="video-wall-label">
+                        <span class="vw-dot"></span>
+                        Zeto on TikTok & Instagram
+                    </div>
+
+                    <!-- 2 phone frames side by side -->
+                    <div class="phones-row">
+
+                        <!-- Phone 1 — TikTok -->
+                        <div class="phone-wrap">
+                            <div class="phone-shell">
+                                <div class="phone-notch"></div>
+                                <div class="phone-screen">
+                                    <!--
+                  HOW TO GET REAL TIKTOK VIDEO:
+                  1. Go to tiktok.com/@zetopicks
+                  2. Open any video
+                  3. Click Share → Embed
+                  4. Copy the blockquote + script code
+                  5. Paste it here replacing the placeholder below
+
+                  OR just use the iframe format:
+                  <iframe src="https://www.tiktok.com/embed/v2/VIDEO_ID"
+                    allowfullscreen allow="autoplay;encrypted-media"
+                    style="width:100%;height:100%;border:none;">
+                  </iframe>
+                -->
+                                    <div class="phone-placeholder">
+                                        <div class="phone-placeholder-icon">📱</div>
+                                        <div class="phone-platform-badge tiktok-badge">TikTok</div>
+                                        <div class="phone-placeholder-text">@zetopicks</div>
+                                        <div class="phone-placeholder-sub">Daily pick breakdowns</div>
+                                        <a href="https://www.tiktok.com/@zetopicks" target="_blank"
+                                            class="phone-visit-btn">
+                                            Watch on TikTok →
+                                        </a>
+                                    </div>
+
+                                    <!-- Uncomment below and paste real TikTok embed to replace placeholder -->
+                                    <!--
+                <blockquote class="tiktok-embed"
+                  cite="https://www.tiktok.com/@zetopicks/video/YOUR_VIDEO_ID"
+                  data-video-id="YOUR_VIDEO_ID"
+                  style="max-width:100%;min-width:100%;height:100%;border:none;">
+                  <section></section>
+                </blockquote>
+                <script async src="https://www.tiktok.com/embed.js"></script>
+                -->
+                                </div>
+                            </div>
+                            <!-- Side actions (decorative TikTok UI) -->
+                            <div class="phone-actions">
+                                <div class="phone-action"><span>❤️</span><span class="action-count">48K</span></div>
+                                <div class="phone-action"><span>💬</span><span class="action-count">1.2K</span></div>
+                                <div class="phone-action"><span>↗️</span><span class="action-count">Share</span></div>
+                            </div>
+                        </div>
+
+                        <!-- Phone 2 — Instagram Reel -->
+                        <div class="phone-wrap">
+                            <div class="phone-shell">
+                                <div class="phone-notch"></div>
+                                <div class="phone-screen">
+                                    <!--
+                  HOW TO GET REAL INSTAGRAM REEL:
+                  1. Go to instagram.com/zetopicks
+                  2. Open any Reel
+                  3. Click ••• → Embed
+                  4. Copy the blockquote + script code
+                  5. Paste here replacing the placeholder
+
+                  OR iframe format:
+                  <iframe src="https://www.instagram.com/p/POST_ID/embed"
+                    allowfullscreen scrolling="no"
+                    style="width:100%;height:100%;border:none;">
+                  </iframe>
+                -->
+                                    <div class="phone-placeholder">
+                                        <div class="phone-placeholder-icon">📸</div>
+                                        <div class="phone-platform-badge ig-badge">Instagram</div>
+                                        <div class="phone-placeholder-text">@zetopicks</div>
+                                        <div class="phone-placeholder-sub">Win screenshots & reels</div>
+                                        <a href="https://www.instagram.com/zetopicks/" target="_blank"
+                                            class="phone-visit-btn">
+                                            View on Instagram →
+                                        </a>
+                                    </div>
+
+                                    <!-- Uncomment and paste real Instagram embed to replace placeholder -->
+                                    <!--
+                <blockquote class="instagram-media"
+                  data-instgrm-permalink="https://www.instagram.com/p/YOUR_POST_ID/"
+                  data-instgrm-version="14"
+                  style="width:100%;height:100%;border:none;">
+                </blockquote>
+                <script async src="//www.instagram.com/embed.js"></script>
+                -->
+                                </div>
+                            </div>
+                            <!-- Side actions (decorative IG UI) -->
+                            <div class="phone-actions">
+                                <div class="phone-action"><span>❤️</span><span class="action-count">12K</span></div>
+                                <div class="phone-action"><span>💬</span><span class="action-count">340</span></div>
+                                <div class="phone-action"><span>📤</span><span class="action-count">Share</span></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /phones-row -->
+
+                    <!-- Follow strip below phones -->
+                    <div class="follow-strip">
+                        <a href="https://www.tiktok.com/@zetopicks" target="_blank" class="follow-pill tiktok-pill">
+                            <span>🎵</span> Follow on TikTok
+                        </a>
+                        <a href="https://www.instagram.com/zetopicks/" target="_blank" class="follow-pill ig-pill">
+                            <span>📸</span> Follow on Instagram
+                        </a>
+                    </div>
+
+                </div>
+                <!-- /video-wall -->
+
+
+                <!-- ======= RIGHT: STATS + DISCORD FEED ======= -->
+                <div class="community-right">
+
+                    <!-- Community stats grid -->
+                    <div class="comm-stats-grid">
+
+                        <div class="comm-stat-tile">
+                            <span class="comm-stat-icon">👥</span>
+                            <div class="comm-stat-val">20K+</div>
+                            <div class="comm-stat-lbl">Active Members</div>
+                        </div>
+
+                        <div class="comm-stat-tile">
+                            <span class="comm-stat-icon">🎁</span>
+                            <div class="comm-stat-val">Weekly</div>
+                            <div class="comm-stat-lbl">Giveaways</div>
+                        </div>
+
+                        <div class="comm-stat-tile">
+                            <span class="comm-stat-icon">🎙️</span>
+                            <div class="comm-stat-val">24/7</div>
+                            <div class="comm-stat-lbl">Support</div>
+                        </div>
+
+                        <div class="comm-stat-tile">
+                            <span class="comm-stat-icon">🎬</span>
+                            <div class="comm-stat-val">Daily</div>
+                            <div class="comm-stat-lbl">Watch Parties</div>
+                        </div>
+
+                    </div>
+
+                    <!-- Discord live feed simulation -->
+                    <div class="discord-card">
+
+                        <div class="discord-header">
+                            <div class="discord-header-left">
+                                <div class="discord-logo">⚡</div>
+                                <div>
+                                    <div class="discord-title">Zeto Picks Discord</div>
+                                    <div class="discord-online">
+                                        <span class="online-dot"></span>
+                                        3,924 members online
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="discord-live-badge">
+                                <span class="live-dot"></span> LIVE
+                            </div>
+                        </div>
+
+                        <!-- Channel list -->
+                        <div class="discord-channels">
+                            <div class="discord-channel active">
+                                <span class="channel-hash">#</span> picks-of-the-day
+                            </div>
+                            <div class="discord-channel">
+                                <span class="channel-hash">#</span> wins-only
+                            </div>
+                            <div class="discord-channel">
+                                <span class="channel-hash">#</span> nba-props
+                            </div>
+                            <div class="discord-channel">
+                                <span class="channel-hash">#</span> general-chat
+                            </div>
+                        </div>
+
+                        <!-- Messages feed -->
+                        <div class="discord-messages" id="discord-feed">
+
+                            <div class="discord-msg">
+                                <div class="discord-avatar" style="background:linear-gradient(135deg,#f09433,#dc2743);">
+                                    MR</div>
+                                <div class="discord-msg-body">
+                                    <div class="discord-msg-header">
+                                        <span class="discord-username">Marcus_R</span>
+                                        <span class="discord-role member-role">Member</span>
+                                        <span class="discord-time">2m ago</span>
+                                    </div>
+                                    <div class="discord-msg-text">
+                                        LETS GOOO 🔥 LeBron just hit 31 pts — Zeto called it perfectly again!! up $800
+                                        tonight 💰
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="discord-msg">
+                                <div class="discord-avatar" style="background:linear-gradient(135deg,#f3550f,#ff6b35);">
+                                    ZP</div>
+                                <div class="discord-msg-body">
+                                    <div class="discord-msg-header">
+                                        <span class="discord-username">Zeto</span>
+                                        <span class="discord-role owner-role">Owner</span>
+                                        <span class="discord-time">5m ago</span>
+                                    </div>
+                                    <div class="discord-msg-text">
+                                        🎯 NBA Pick of the day just dropped in #picks-of-the-day — 5-leg power play.
+                                        Trust the process 🔒
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="discord-msg">
+                                <div class="discord-avatar" style="background:linear-gradient(135deg,#0f3460,#533483);">
+                                    JT</div>
+                                <div class="discord-msg-body">
+                                    <div class="discord-msg-header">
+                                        <span class="discord-username">Jordan_T</span>
+                                        <span class="discord-role member-role">Member</span>
+                                        <span class="discord-time">8m ago</span>
+                                    </div>
+                                    <div class="discord-msg-text">
+                                        Been here 4 months. Up over $6K total. Best investment I ever made no cap 🙏
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="discord-msg">
+                                <div class="discord-avatar" style="background:linear-gradient(135deg,#2d6a4f,#1b4332);">
+                                    AK</div>
+                                <div class="discord-msg-body">
+                                    <div class="discord-msg-header">
+                                        <span class="discord-username">Alex_K</span>
+                                        <span class="discord-role vip-role">VIP</span>
+                                        <span class="discord-time">11m ago</span>
+                                    </div>
+                                    <div class="discord-msg-text">
+                                        Shout out to Zeto and the team 🔥 solid NFL, NBA and esports plays. Constant
+                                        greens ✅
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="discord-msg">
+                                <div class="discord-avatar" style="background:linear-gradient(135deg,#d62828,#f77f00);">
+                                    DW</div>
+                                <div class="discord-msg-body">
+                                    <div class="discord-msg-header">
+                                        <span class="discord-username">Derek_W</span>
+                                        <span class="discord-role member-role">Member</span>
+                                        <span class="discord-time">14m ago</span>
+                                    </div>
+                                    <div class="discord-msg-text">
+                                        Won over 3K first month I joined. Ended up buying lifetime — won the money back
+                                        same day 😭🙏
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- New message indicator -->
+                            <div class="discord-new-msg" id="new-msg-indicator">
+                                <span class="new-msg-dot"></span>
+                                New messages arriving...
+                            </div>
+
+                        </div>
+                        <!-- /discord-messages -->
+
+                        <!-- Discord CTA -->
+                        <div class="discord-cta-row">
+                            <a href="https://whop.com/1-month-4e/?productId=prod_BdecxIAOqkyO4&a=digitalartlab"
+                                class="discord-join-btn">
+                                Join the Community →
+                            </a>
+                        </div>
+
+                    </div>
+                    <!-- /discord-card -->
+
+                    <!-- Community perks row -->
+                    <div class="perks-row">
+                        <div class="perk-item">
+                            <span class="perk-icon">📚</span>
+                            <div class="perk-text">Bankroll guides & education</div>
+                        </div>
+                        <div class="perk-item">
+                            <span class="perk-icon">🎰</span>
+                            <div class="perk-text">Daily Whop Wheel spins</div>
+                        </div>
+                        <div class="perk-item">
+                            <span class="perk-icon">🏆</span>
+                            <div class="perk-text">Score prediction contests</div>
+                        </div>
+                        <div class="perk-item">
+                            <span class="perk-icon">🎙️</span>
+                            <div class="perk-text">Live watch party voice chats</div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /community-right -->
+
+            </div>
+            <!-- /community-grid -->
+
+            <!-- Bottom CTA -->
+            <div class="community-cta-strip">
+                <div class="community-cta-text">
+                    READY TO JOIN THE <span>WINNING</span> SIDE?
+                </div>
+                <a href="https://whop.com/1-month-4e/?productId=prod_BdecxIAOqkyO4&a=digitalartlab"
+                    class="community-cta-btn">
+                    Get Access Now →
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TikTok embed script (needed when real TikTok embeds are added) -->
+    <script async src="https://www.tiktok.com/embed.js"></script>
+
+    <script>
+        // Simulate live Discord messages arriving
+        const messages = [
+            { user: 'Kyle_S', role: 'member', color: '#3a0ca3,#7209b7', time: 'just now', text: 'MLB 5-leg just hit!! +$1,200 🤑🤑 ZETO IS A GOAT' },
+            { user: 'Sarah_M', role: 'vip', color: '#0f3460,#16213e', time: 'just now', text: 'Watch party tonight for the NBA game 🍿 who\'s joining??' },
+            { user: 'Ryan_T', role: 'member', color: '#d62828,#f77f00', time: 'just now', text: 'eSports CoD pick just dropped 🎮 let\'s get it!' },
+        ];
+
+        let msgIndex = 0;
+        const feed = document.getElementById('discord-feed');
+        const indicator = document.getElementById('new-msg-indicator');
+
+        function addMessage() {
+            if (msgIndex >= messages.length) msgIndex = 0;
+            const m = messages[msgIndex++];
+
+            const roleMap = {
+                member: '<span class="discord-role member-role">Member</span>',
+                vip: '<span class="discord-role vip-role">VIP</span>',
+                owner: '<span class="discord-role owner-role">Owner</span>',
+            };
+
+            const div = document.createElement('div');
+            div.className = 'discord-msg discord-msg-new';
+            div.innerHTML = `
+      <div class="discord-avatar" style="background:linear-gradient(135deg,${m.color});">${m.user.slice(0, 2).toUpperCase()}</div>
+      <div class="discord-msg-body">
+        <div class="discord-msg-header">
+          <span class="discord-username">${m.user}</span>
+          ${roleMap[m.role]}
+          <span class="discord-time">${m.time}</span>
+        </div>
+        <div class="discord-msg-text">${m.text}</div>
+      </div>
+    `;
+
+            // Insert before indicator
+            feed.insertBefore(div, indicator);
+
+            // Remove oldest message if too many
+            const msgs = feed.querySelectorAll('.discord-msg');
+            if (msgs.length > 6) msgs[0].remove();
+
+            // Scroll to bottom
+            feed.scrollTop = feed.scrollHeight;
+
+            // Flash indicator
+            indicator.style.opacity = '1';
+            setTimeout(() => { indicator.style.opacity = '0.4'; }, 1000);
+        }
+
+        // Add new message every 4 seconds
+        setInterval(addMessage, 4000);
+    </script>
+
+
+
+    <section id="pricing">
+        <div class="pricing-wrap">
+
+            <!-- HEADER -->
+            <div class="pricing-header">
+
+                <div class="pricing-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="divider">·</span>
+                    <span>4.6 (588 Reviews) on Whop</span>
+                </div>
+
+                <h2>
+                    <span class="word-dark">Choose Your </span>
+                    <span class="word-italic">Winning</span><br />
+                    <span class="word-dark">Plan</span>
+                </h2>
+
+                <p>
+                    Every plan gives you full access to Zeto's verified picks, community and support.
+                    <strong>No hidden fees — cancel anytime.</strong>
+                </p>
+
+            </div>
+
+            <!-- CARDS -->
+            <div class="cards-grid">
+
+                <!-- ===== 1 MONTH ===== -->
+                <div class="plan-card default">
+
+                    <div class="card-top">
+                        <div class="card-icon-wrap">📅</div>
+                        <div class="card-name">Zeto Picks 1 Month</div>
+                        <div class="card-tagline">Most Flexible</div>
+                    </div>
+
+                    <div class="card-price-block">
+                        <div class="card-price">
+                            <span class="price-amount">$70</span>
+                            <span class="price-period">/ month</span>
+                        </div>
+                        <span class="price-saving">⭐ 4.6 · 588 Reviews</span>
+                    </div>
+
+                    <p class="card-desc">
+                        Perfect for getting started. Full access to all daily picks, community and support for one
+                        month.
+                    </p>
+
+                    <p class="card-features-label">Includes:</p>
+                    <ul class="card-features">
+                        <li class="card-feature-item"><span class="feature-check">✓</span><span>15+ verified picks every
+                                day</span></li>
+                        <li class="card-feature-item"><span class="feature-check">✓</span><span>NBA, NFL, MLB, NHL &
+                                eSports coverage</span></li>
+                        <li class="card-feature-item"><span class="feature-check">✓</span><span>PrizePicks, Underdog &
+                                Sleeper plays</span></li>
+                        <li class="card-feature-item"><span class="feature-check">✓</span><span>Full community Discord
+                                access</span></li>
+                        <li class="card-feature-item"><span class="feature-check">✓</span><span>24/7 support from Zeto's
+                                team</span></li>
+                    </ul>
+
+                    <a href="https://whop.com/1-month-4e/?productId=prod_BdecxIAOqkyO4&a=digitalartlab"
+                        class="card-cta">
+                        <span class="cta-label">Get Started</span>
+                        <span class="cta-arrow">→</span>
+                    </a>
+
+                </div>
+
+                <!-- ===== 3 MONTHS FEATURED ===== -->
+                <div class="plan-card featured">
+
+                    <div class="featured-badge">Most Popular</div>
+
+                    <div class="card-top">
+                        <div class="card-icon-wrap">🔥</div>
+                        <div class="card-name">Zeto Picks 3 Months</div>
+                        <div class="card-tagline">Best Value</div>
+                    </div>
+
+                    <div class="card-price-block">
+                        <div class="card-price">
+                            <span class="price-amount">$125</span>
+                            <span class="price-period">/ 3 months</span>
+                        </div>
+                        <span class="price-saving">💰 Save $85 vs monthly</span>
+                    </div>
+
+                    <p class="card-desc">
+                        The smart choice. Three months of elite picks at a fraction of the monthly price — serious
+                        bettors pick this.
+                    </p>
+
+                    <p class="card-features-label">Includes:</p>
+                    <ul class="card-features">
+                        <li class="card-feature-item"><span class="feature-check">✓</span><span>Everything in 1 Month
+                                plan</span></li>
+                        <li class="card-feature-item"><span class="feature-check">✓</span><span>Priority pick
+                                notifications</span></li>
+                        <li class="card-feature-item"><span class="feature-check">✓</span><span>Access to weekly member
+                                giveaways</span></li>
+                        <li class="card-feature-item"><span class="feature-check">✓</span><span>Bankroll management
+                                guides</span></li>
+                        <li class="card-feature-item"><span class="feature-check">✓</span><span>Exclusive 3-month member
+                                badge</span></li>
+                    </ul>
+
+                    <a href="https://whop.com/1-month-4e/?productId=prod_aD32aWzGMOPnE&a=digitalartlab"
+                        class="card-cta orange-cta">
+                        <span class="cta-label">Get Best Value</span>
+                        <span class="cta-arrow">→</span>
+                    </a>
+
+                </div>
+
+                <!-- ===== DELUXE LIFETIME ===== -->
+                <div class="plan-card default">
+
+                    <div class="card-top">
+                        <div class="card-icon-wrap">👑</div>
+                        <div class="card-name">Zeto Picks Deluxe Lifetime</div>
+                        <div class="card-tagline">Pay Once · Win Forever</div>
+                    </div>
+
+                    <div class="card-price-block">
+                        <div class="card-price">
+                            <span class="price-amount">$599</span>
+                            <span class="price-period">.99 one-time</span>
+                        </div>
+                        <span class="price-saving">♾️ Never pay again</span>
+                    </div>
+
+                    <p class="card-desc">
+                        One payment. Lifetime access. For serious bettors who want Zeto's picks forever with zero
+                        recurring fees.
+                    </p>
+
+                    <p class="card-features-label">Includes:</p>
+                    <ul class="card-features">
+                        <li class="card-feature-item"><span class="feature-check">✓</span><span>Everything in all plans
+                                — forever</span></li>
+                        <li class="card-feature-item"><span class="feature-check">✓</span><span>Lifetime Discord &
+                                community access</span></li>
+                        <li class="card-feature-item"><span class="feature-check">✓</span><span>VIP Deluxe member badge
+                                & perks</span></li>
+                        <li class="card-feature-item"><span class="feature-check">✓</span><span>Direct access to Zeto's
+                                inner circle</span></li>
+                        <li class="card-feature-item"><span class="feature-check">✓</span><span>All future features
+                                included free</span></li>
+                    </ul>
+
+                    <a href="https://whop.com/1-month-4e/?productId=prod_hfkPtgUUYspS1&a=digitalartlab"
+                        class="card-cta">
+                        <span class="cta-label">Go Lifetime</span>
+                        <span class="cta-arrow">→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- FOOTER -->
+            <div class="pricing-footer">
+                🔒 Secure checkout via Whop
+                <span>·</span>
+                Cancel anytime
+                <span>·</span>
+                4.6★ rated by 588 verified members
+                <span>·</span>
+                Instant access after payment
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== JS ===== -->
+    <script>
+        const btn = document.getElementById('hamburger-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            btn.classList.toggle('open');
+            menu.classList.toggle('open');
+        });
+
+        document.querySelectorAll('.mobile-link, #mobile-menu .cta-btn').forEach(link => {
+            link.addEventListener('click', () => {
+                btn.classList.remove('open');
+                menu.classList.remove('open');
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
