@@ -568,6 +568,348 @@
         </div>
     </section>
 
+
+
+    <section id="videos">
+        <div class="videos-wrap">
+
+            <!-- Label row -->
+            <div class="sec-label-row">
+                <span class="sec-label">Zeto In Action</span>
+                <div class="sec-label-line"></div>
+                <span class="sec-label-num">05 / 06</span>
+            </div>
+
+            <!-- Heading -->
+            <div class="videos-header">
+                <h2 class="videos-heading">
+                    WATCH ZETO <span>WORK</span>
+                </h2>
+                <p class="videos-sub">
+                    Daily breakdowns, win reactions and community highlights —
+                    straight from Zeto's TikTok, Instagram and YouTube.
+                </p>
+
+                <!-- Platform filter tabs -->
+                <div class="platform-tabs">
+                    <button class="ptab active" data-filter="all">All Videos</button>
+                    <button class="ptab" data-filter="tiktok">
+                        <span class="ptab-icon">🎵</span> TikTok
+                    </button>
+                    <button class="ptab" data-filter="instagram">
+                        <span class="ptab-icon">📸</span> Instagram
+                    </button>
+                    <button class="ptab" data-filter="youtube">
+                        <span class="ptab-icon">▶️</span> YouTube
+                    </button>
+                </div>
+            </div>
+
+            <!-- ============================================================
+         VIDEO GRID
+         Layout: 1 big featured video left + 2 stacked right (row 1)
+                 3 equal cards (row 2)
+         ============================================================ -->
+            <div class="video-grid">
+
+                <!-- ---- ROW 1 ---- -->
+
+                <!-- BIG FEATURED — TikTok (left, tall) -->
+                <div class="vid-card vid-featured" data-type="tiktok">
+                    <div class="vid-frame">
+
+                        <!--
+          ╔══════════════════════════════════════════╗
+          ║  HOW TO ADD REAL TIKTOK VIDEO:           ║
+          ║  1. Go to tiktok.com/@zetopicks          ║
+          ║  2. Open any video                       ║
+          ║  3. Click Share → Embed                  ║
+          ║  4. Copy the iframe src URL              ║
+          ║  5. Replace the src below:               ║
+          ║     src="https://www.tiktok.com/         ║
+          ║          embed/v2/YOUR_VIDEO_ID"         ║
+          ╚══════════════════════════════════════════╝
+          -->
+                        <iframe src="https://www.tiktok.com/embed/@zetopicks" allowfullscreen
+                            allow="autoplay; encrypted-media" title="Zeto Picks TikTok" loading="lazy"></iframe>
+
+                        <!-- Fallback overlay shown when embed fails -->
+                        <div class="vid-fallback">
+                            <div class="vid-fallback-icon">🎵</div>
+                            <div class="vid-fallback-platform tiktok-color">TikTok</div>
+                            <div class="vid-fallback-title">Daily Pick Breakdown</div>
+                            <div class="vid-fallback-desc">@zetopicks · Watch Zeto break down today's top player props
+                            </div>
+                            <a href="https://www.tiktok.com/@zetopicks" target="_blank"
+                                class="vid-fallback-btn tiktok-btn">
+                                Watch on TikTok →
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="vid-info">
+                        <span class="vid-platform-badge tiktok-badge">🎵 TikTok</span>
+                        <h3 class="vid-title">Today's NBA Player Props Breakdown</h3>
+                        <p class="vid-desc">Zeto breaks down his top 5-leg power play for tonight's NBA slate</p>
+                        <div class="vid-meta">
+                            <span class="vid-views">👁 48.2K views</span>
+                            <span class="vid-dot">·</span>
+                            <span class="vid-date">2 days ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT STACK — 2 smaller cards -->
+                <div class="vid-stack">
+
+                    <!-- Instagram Reel -->
+                    <div class="vid-card" data-type="instagram">
+                        <div class="vid-frame vid-frame-short">
+
+                            <!--
+            ╔══════════════════════════════════════════╗
+            ║  HOW TO ADD REAL INSTAGRAM REEL:         ║
+            ║  1. Go to instagram.com/zetopicks        ║
+            ║  2. Open any Reel                        ║
+            ║  3. Click ••• → Embed                   ║
+            ║  4. Copy the iframe src:                 ║
+            ║     src="https://www.instagram.com/      ║
+            ║          p/POST_ID/embed"                ║
+            ╚══════════════════════════════════════════╝
+            -->
+                            <iframe src="https://www.instagram.com/zetopicks/embed" allowfullscreen scrolling="no"
+                                title="Zeto Picks Instagram" loading="lazy"></iframe>
+
+                            <div class="vid-fallback">
+                                <div class="vid-fallback-icon">📸</div>
+                                <div class="vid-fallback-platform ig-color">Instagram</div>
+                                <div class="vid-fallback-title">Member Win Reaction</div>
+                                <div class="vid-fallback-desc">@zetopicks · Member hits $2,400 following Zeto's picks
+                                </div>
+                                <a href="https://www.instagram.com/zetopicks/" target="_blank"
+                                    class="vid-fallback-btn ig-btn">
+                                    View on Instagram →
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="vid-info vid-info-sm">
+                            <span class="vid-platform-badge ig-badge">📸 Instagram</span>
+                            <h3 class="vid-title vid-title-sm">Member Win Reaction 🔥</h3>
+                            <div class="vid-meta">
+                                <span class="vid-views">❤️ 12.4K likes</span>
+                                <span class="vid-dot">·</span>
+                                <span class="vid-date">3 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- YouTube Short -->
+                    <div class="vid-card" data-type="youtube">
+                        <div class="vid-frame vid-frame-short">
+
+                            <!--
+            ╔══════════════════════════════════════════╗
+            ║  HOW TO ADD REAL YOUTUBE VIDEO:          ║
+            ║  1. Go to youtube.com                    ║
+            ║  2. Search "Zeto Picks"                  ║
+            ║  3. Open any video                       ║
+            ║  4. Click Share → Embed                  ║
+            ║  5. Copy the video ID from URL:          ║
+            ║     youtube.com/watch?v=VIDEO_ID         ║
+            ║  6. Replace YOUR_VIDEO_ID below          ║
+            ╚══════════════════════════════════════════╝
+            -->
+                            <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID?rel=0&modestbranding=1"
+                                allowfullscreen
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
+                                title="Zeto Picks YouTube" loading="lazy"></iframe>
+
+                            <div class="vid-fallback">
+                                <div class="vid-fallback-icon">▶️</div>
+                                <div class="vid-fallback-platform yt-color">YouTube</div>
+                                <div class="vid-fallback-title">5-Leg Parlay Hits!</div>
+                                <div class="vid-fallback-desc">Watch the moment Zeto's 5-leg parlay hits — community
+                                    reacts live</div>
+                                <a href="https://www.youtube.com/@zetopicks" target="_blank"
+                                    class="vid-fallback-btn yt-btn">
+                                    Watch on YouTube →
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="vid-info vid-info-sm">
+                            <span class="vid-platform-badge yt-badge">▶️ YouTube</span>
+                            <h3 class="vid-title vid-title-sm">5-Leg Parlay HITS! 🎯</h3>
+                            <div class="vid-meta">
+                                <span class="vid-views">👁 24.8K views</span>
+                                <span class="vid-dot">·</span>
+                                <span class="vid-date">5 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /vid-stack -->
+
+                <!-- ---- ROW 2: 3 equal cards ---- -->
+
+                <!-- TikTok 2 -->
+                <div class="vid-card vid-row2" data-type="tiktok">
+                    <div class="vid-frame vid-frame-medium">
+                        <iframe src="https://www.tiktok.com/embed/@zetopicks" allowfullscreen
+                            allow="autoplay; encrypted-media" title="Zeto Picks TikTok 2" loading="lazy"></iframe>
+                        <div class="vid-fallback">
+                            <div class="vid-fallback-icon">🎵</div>
+                            <div class="vid-fallback-platform tiktok-color">TikTok</div>
+                            <div class="vid-fallback-title">NFL Props Breakdown</div>
+                            <div class="vid-fallback-desc">@zetopicks · Zeto's top NFL picks for the week</div>
+                            <a href="https://www.tiktok.com/@zetopicks" target="_blank"
+                                class="vid-fallback-btn tiktok-btn">
+                                Watch →
+                            </a>
+                        </div>
+                    </div>
+                    <div class="vid-info vid-info-sm">
+                        <span class="vid-platform-badge tiktok-badge">🎵 TikTok</span>
+                        <h3 class="vid-title vid-title-sm">NFL Props Breakdown 🏈</h3>
+                        <div class="vid-meta">
+                            <span class="vid-views">👁 31.6K views</span>
+                            <span class="vid-dot">·</span>
+                            <span class="vid-date">1 week ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instagram 2 -->
+                <div class="vid-card vid-row2" data-type="instagram">
+                    <div class="vid-frame vid-frame-medium">
+                        <iframe src="https://www.instagram.com/zetopicks/embed" allowfullscreen scrolling="no"
+                            title="Zeto Picks Instagram 2" loading="lazy"></iframe>
+                        <div class="vid-fallback">
+                            <div class="vid-fallback-icon">📸</div>
+                            <div class="vid-fallback-platform ig-color">Instagram</div>
+                            <div class="vid-fallback-title">eSports Pick WIN</div>
+                            <div class="vid-fallback-desc">@zetopicks · CoD pick hits — community goes crazy 🎮</div>
+                            <a href="https://www.instagram.com/zetopicks/" target="_blank"
+                                class="vid-fallback-btn ig-btn">
+                                View →
+                            </a>
+                        </div>
+                    </div>
+                    <div class="vid-info vid-info-sm">
+                        <span class="vid-platform-badge ig-badge">📸 Instagram</span>
+                        <h3 class="vid-title vid-title-sm">eSports Pick Hits 🎮</h3>
+                        <div class="vid-meta">
+                            <span class="vid-views">❤️ 8.9K likes</span>
+                            <span class="vid-dot">·</span>
+                            <span class="vid-date">1 week ago</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- YouTube 2 -->
+                <div class="vid-card vid-row2" data-type="youtube">
+                    <div class="vid-frame vid-frame-medium">
+                        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID_2?rel=0&modestbranding=1"
+                            allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
+                            title="Zeto Picks YouTube 2" loading="lazy"></iframe>
+                        <div class="vid-fallback">
+                            <div class="vid-fallback-icon">▶️</div>
+                            <div class="vid-fallback-platform yt-color">YouTube</div>
+                            <div class="vid-fallback-title">Monthly Recap</div>
+                            <div class="vid-fallback-desc">Full month of picks recap — wins, losses and key stats</div>
+                            <a href="https://www.youtube.com/@zetopicks" target="_blank"
+                                class="vid-fallback-btn yt-btn">
+                                Watch →
+                            </a>
+                        </div>
+                    </div>
+                    <div class="vid-info vid-info-sm">
+                        <span class="vid-platform-badge yt-badge">▶️ YouTube</span>
+                        <h3 class="vid-title vid-title-sm">Monthly Picks Recap 📊</h3>
+                        <div class="vid-meta">
+                            <span class="vid-views">👁 19.3K views</span>
+                            <span class="vid-dot">·</span>
+                            <span class="vid-date">2 weeks ago</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /video-grid -->
+
+            <!-- Follow all platforms strip -->
+            <div class="platforms-strip">
+                <div class="platforms-strip-label">Follow Zeto on all platforms</div>
+                <div class="platforms-strip-links">
+                    <a href="https://www.tiktok.com/@zetopicks" target="_blank" class="platform-link tiktok-link">
+                        <span>🎵</span>
+                        <div>
+                            <div class="platform-link-name">TikTok</div>
+                            <div class="platform-link-sub">@zetopicks</div>
+                        </div>
+                    </a>
+                    <div class="platforms-divider"></div>
+                    <a href="https://www.instagram.com/zetopicks/" target="_blank" class="platform-link ig-link">
+                        <span>📸</span>
+                        <div>
+                            <div class="platform-link-name">Instagram</div>
+                            <div class="platform-link-sub">29K followers</div>
+                        </div>
+                    </a>
+                    <div class="platforms-divider"></div>
+                    <a href="https://www.youtube.com/@zetopicks" target="_blank" class="platform-link yt-link">
+                        <span>▶️</span>
+                        <div>
+                            <div class="platform-link-name">YouTube</div>
+                            <div class="platform-link-sub">@zetopicks</div>
+                        </div>
+                    </a>
+                    <div class="platforms-divider"></div>
+                    <a href="https://whop.com/1-month-4e/?productId=prod_BdecxIAOqkyO4&a=digitalartlab"
+                        class="platform-link whop-link">
+                        <span>⚡</span>
+                        <div>
+                            <div class="platform-link-name">Join on Whop</div>
+                            <div class="platform-link-sub">Get full access</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script async src="https://www.tiktok.com/embed.js"></script>
+
+    <script>
+        // Platform filter tabs
+        const tabs = document.querySelectorAll('.ptab');
+        const cards = document.querySelectorAll('.vid-card');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+
+                const filter = tab.dataset.filter;
+
+                cards.forEach(card => {
+                    if (filter === 'all' || card.dataset.type === filter) {
+                        card.style.display = 'flex';
+                        card.style.animation = 'fadeUp 0.4s ease both';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+
+
+
+
     <!-- TikTok embed script (required for TikTok embeds to work) -->
     <script async src="https://www.tiktok.com/embed.js"></script>
 
